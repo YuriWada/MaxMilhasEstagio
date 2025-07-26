@@ -30,6 +30,9 @@ df['dia_semana_compra'] = df['data_compra'].dt.day_name()
 df['usa_milhas'] = df['milhas_usadas'] > 0
 df['passageiros_total'] = df['adultos'] + df['criancas']
 
+# arredonda valor passagem para 2 casas decimais
+df['valor_passagem'] = df['valor_passagem'].round(2) 
+
 # E aqui mapeamos os status para facilitar a leitura
 # Lembrando que os status_id estão representados na aba BaseStatus
 status_df = pd.read_excel(file_path, sheet_name='BaseStatus')
