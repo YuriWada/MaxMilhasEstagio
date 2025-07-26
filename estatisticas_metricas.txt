@@ -1,0 +1,29 @@
+ESTATÍSTICAS DAS MÉTRICAS PROPOSTAS
+
+1. RECEITA MÉDIA POR COMPRA
+Receita Média Geral: R$ 2481.02
+
+Receita Média por Status:
+- Aguardando cancelamento de ticket: R$ 3049.95
+- Aguardando forma de pagamento: R$ 2834.11
+- ERRO NAO EMISSAO: R$ 1629.31
+- Transacao cancelada: R$ 2880.88
+- Transacao emitida: R$ 2237.01
+
+Receita Média por Tipo de Viagem:
+- Ida e volta: R$ 3633.45
+- Somente ida: R$ 1616.95
+
+2. MILHAS MÉDIAS UTILIZADAS POR COMPRA
+Milhas Médias Geral: 70289.98
+
+Milhas Médias por Status:
+- Aguardando cancelamento de ticket: 210000.00
+- Aguardando forma de pagamento: 80791.52
+- ERRO NAO EMISSAO: 46450.00
+- Transacao cancelada: 80145.74
+- Transacao emitida: 62839.30
+
+Milhas Médias por Tipo de Viagem:
+- Ida e volta: 100459.23
+- Somente ida: 50925.35
