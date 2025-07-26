@@ -80,11 +80,12 @@ plt.close()
 
 # Analise de status das compras
 status_counts = df['status'].value_counts()
-plt.figure(figsize=(10, 8))
+plt.figure(figsize=(12, 8))
 ax = sns.barplot(x=status_counts.index, y=status_counts.values)
 plt.title('Distribuição de Status das Compras')
 plt.xlabel('Status')
 plt.ylabel('Quantidade')
+plt.xticks(rotation=45, ha='right') 
 plt.tight_layout()
 plt.savefig('status_compras.png', dpi=300)
 plt.close()
@@ -187,6 +188,7 @@ milhas_media_geral = df_com_milhas['milhas_usadas'].mean() if len(df_com_milhas)
 milhas_media_por_status = df_com_milhas.groupby('status')['milhas_usadas'].mean() if len(df_com_milhas) > 0 else pd.Series()
 milhas_media_por_tipo = df_com_milhas.groupby('tipo_viagem')['milhas_usadas'].mean() if len(df_com_milhas) > 0 else pd.Series()
 
+# escreve as estatísticas em um arquivo de texto
 with open('estatisticas_metricas.txt', 'w') as f:
     f.write("ESTATÍSTICAS DAS MÉTRICAS PROPOSTAS\n\n")
     
